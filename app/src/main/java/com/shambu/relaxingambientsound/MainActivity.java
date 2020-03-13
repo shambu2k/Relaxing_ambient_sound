@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;

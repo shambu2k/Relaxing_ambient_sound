@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#161616"
     tools:context=".MainActivity">
 
@@ -12,10 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/pacifico"
-        android:text="Relaxing \n Ambient Sounds"
+        android:text="Relaxing Ambient Sounds"
         android:textAlignment="center"
         android:textColor="#F6FF00"
-        android:textSize="40sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,26 +24,28 @@
 
     <Button
         android:id="@+id/play_pause"
-        android:background="@drawable/button_bgrnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_bgrnd"
         android:text="Play"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title_text"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
         android:id="@+id/stop"
-        android:background="@drawable/button_bgrnd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_bgrnd"
         android:text="Stop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/play_pause"
+        app:layout_constraintHorizontal_bias="0.33333"
+        app:layout_constraintStart_toEndOf="@+id/play_pause"
+        app:layout_constraintTop_toBottomOf="@+id/title_text"
         app:layout_constraintVertical_bias="0.05" />
 
     <SeekBar
@@ -86,14 +88,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rain"
-        android:textColor="#FFFFFF"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintHorizontal_bias="0.237"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rain_seek"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.695" />
 
     <TextView
         android:id="@+id/rain_volval"
@@ -105,7 +107,7 @@
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintHorizontal_bias="0.241"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rain_text"
         app:layout_constraintVertical_bias="0.1" />
@@ -119,10 +121,9 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/jazz_seek"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <TextView
         android:id="@+id/jazz_volval"
@@ -145,14 +146,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fire"
-        android:textColor="#FFFFFF"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintHorizontal_bias="0.765"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fire_seek"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <TextView
         android:id="@+id/fire_volval"
@@ -164,10 +165,9 @@
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6855"
+        app:layout_constraintHorizontal_bias="0.7613"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fire_text"
         app:layout_constraintVertical_bias="0.1" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
